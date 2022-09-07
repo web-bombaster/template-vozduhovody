@@ -1,0 +1,63 @@
+form#zayavka.form(method='post', action='')
+	h3.text-center Заказать звонок
+	p.text-center Хотите мы Вам перезвоним и расскажем подробности о разработке сайта?
+
+	//- label.control-label(for='af_phone')
+		| Котактный телефон
+	.before.phone
+		input.jsFormPhone(name='phone', type='tel', value='', placeholder="Контактный телефон", required="")
+		//- span.error.error-phone
+
+	input.hidden(name='pageUrl', type='text', value='url')
+	input.hidden.form-title(name='formTitle', type='text')
+
+	//- .before
+	label.control-label.polytic(for='zayavka-polytic')
+		input#zayavka-polytic.polytic.jsFormCheckbox(name='soglasie', type='checkbox', value='yes', required="")
+		//- span.error.error-polytic
+		| Даю согласие на обработку моих персональных данных на условиях, указанных в&#32;
+		a(href='#') Политике конфиденциальности
+
+	//- button.btn.submit(name='submit', type='submit', disabled) Отправить
+	button.btn.submit(name='submit', type='button') Отправить
+
+
+form#zayavka2.form(method='post', action='')
+	h3.text-center Обратная связь
+
+	//- label.control-label(for='af_name')
+		| Ваше имя
+	.before.name
+		input.jsFormText(name='name', type='text', value='', placeholder="Ваше имя", required="")
+		//- span.error.error-name Поле должно быть заполнено
+
+	//- label.control-label(for='af_mail')
+	//- 	| Ваш e-mail
+	.before.mail
+		input.jsFormMail(name='mail', type='email', value='', placeholder="Ваш Email", required="")
+		//- span.error.error-mail
+
+	input.hidden(name='pageUrl', type='text', value='url')
+	input.hidden.form-title(name='formTitle', type='text')
+
+	//- label.control-label(for='af_phone')
+		| Котактный телефон
+	//- .before.phone
+		input.jsFormPhone(name='phone', type='tel', value='', placeholder="Контактный телефон", required="")
+		//- span.error.error-phone
+
+	//- label.control-label(for='af_text')
+		| Ваше сообщение
+		span.error_text
+	.before.comment
+		textarea.jsFormText(name="comment", placeholder="Ваше сообщение")
+
+	//- .before
+	label.control-label.polytic(for='zayavka2-polytic')
+		input#zayavka2-polytic.polytic.jsFormCheckbox(name='soglasie', type='checkbox', value='yes', required="")
+		//- span.error.error-polytic
+		| Даю согласие на обработку моих персональных данных на условиях, указанных в&#32;
+		a(href='#') Политике конфиденциальности
+
+	//- button.btn.submit(name='submit', type='submit', disabled) Отправить
+	button.btn.submit(name='submit', type='button') Отправить

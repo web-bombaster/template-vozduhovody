@@ -1,0 +1,54 @@
+.btn,
+button,
+.button {
+	display: inline-block;
+	margin-top: 35px;
+	padding: 18px 65px;
+	background-color: $color-akcent;
+
+	border-radius: 180px;
+	transition: .5s;
+	cursor: pointer;
+
+	color: #fff;
+	font-size: 22px;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 1;
+
+	@media screen and (max-width: $break_md) {
+		font-size: 18px;
+	}
+
+	&:hover {
+		background-color: darken($color-akcent, 5%);
+	}
+
+	&-box {
+		// margin-top: 25px;
+		margin-bottom: 35px;
+		text-align: center;
+	}
+}
+
+button.slick-arrow,
+button.mfp-close,
+button.mfp-arrow {
+	border-radius: initial;
+	//margin-top: initial;
+	box-shadow: none;
+	//top: initial;
+
+	&:hover {
+		background-color: initial;
+		color: initial;
+		border: initial;
+		//margin-top: initial;
+		//top: initial;
+	}
+}
+
+button.slick-arrow,
+button.mfp-close {
+	margin-top: 0;
+}

@@ -1,0 +1,70 @@
+// Смартгрид и свои миксины
+@import '_smart-grid';
+@import '_mixins/mixins'; // свои миксины
+
+// Шрифты
+// @import "_fonts";
+
+// Нормализация
+@import '_normalize';
+
+// Переменные
+@import "vars";
+
+// Свои общие стили
+@import "_main";
+
+// Стандартности
+// @import '_preloader'; // Прелоадер
+@import '_adaptiv-video'; // Адаптивное видео
+@import '_form'; // Формы
+@import "_gallery";
+@import "_slider-gallery";
+@import '_pagination'; // Постраничная навигация
+@import '_breadcrumbs'; // Постраничная навигация
+@import "_ukrasheniya"; // Украшения текста - списки, цитаты и пр.
+// @import "_docs";
+@import '_button'; // Кнопки
+@import '_youtube-prev'; // Привью картинка для Ютуба, видео во всплывающем окне
+// @import '_section-news'; // Новости
+
+// Стили текущего проекта
+@import "_header";
+@import "_section-hero";
+@import "_phone-btn";
+@import "_sitemap";
+@import "_section-about";
+@import "_section-certificate";
+@import "_section-products";
+@import "_section-video";
+@import "_section-cta-price";
+@import "_section-advantages";
+@import "_section-portfolio";
+@import "_section-action";
+@import "_section-cooperation";
+@import "_section-delivery";
+@import "_section-contacns";
+@import "_footer";
+// @import "_section-promo";
+// @import "_menu-adaptiv";
+// @import "_slider-bigslider";
+// @import "_section-works";
+// @import "_section-price";
+// @import "_section-guarantee";
+// @import "_section-bonus";
+// @import "_section-steps";
+// @import "_blog-aside";
+// @import "_section-contacts";
+// @import "_section-bottom";
+// @import "_help-panel";
+// @import "_timer";
+
+
+// Библиотеки и их кастомизация
+// @import '_libs'; // Импортируем стили подключенных библиотек
+@import "../libs/magnific-popup/dist/magnific-popup.css";
+@import '_custom-popup'; // Кастомизация стилей попапов
+@import "../libs/slick-carousel/slick/slick.scss"; // slick
+// @import "../libs/slick-carousel/slick/slick-theme.scss"; // slick
+@import '_custom-slick'; // Кастомизация стилей слайдера
+// @import "../libs/font-awesome-4.7.0/css/font-awesome.css";

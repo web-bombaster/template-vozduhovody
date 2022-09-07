@@ -1,0 +1,9 @@
+.contacts {
+	text-align: center;
+	@include pix-to-rem(24px);
+    font-weight: bold;
+
+    p {
+        margin: 10px auto;
+    }
+}

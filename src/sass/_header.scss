@@ -1,0 +1,134 @@
+.header {
+	padding: 25px 0;
+
+
+	@media screen and (max-width: $break_sm) {
+		padding: 5px 0 10px;
+		text-align: center;
+		@include pix-to-rem(12px);
+	}
+
+	br {
+		@media screen and (max-width: $break_sm) {
+			display: initial;
+		}
+	}
+}
+
+.header .wrapper {
+	@media screen and (max-width: $break_md) {
+		max-width: 600px;
+	}
+}
+
+.header .row {
+	@include row-flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media screen and (max-width: 1100px) {
+		align-items: flex-start;
+	}
+}
+
+.header-logo {
+	@include col();
+	order: 0;
+
+	@media screen and (max-width: 1100px) {
+		margin-right: 0;
+	}
+
+	@media screen and (max-width: $break_md) {
+		margin: 0 15px;
+		@include size(6);
+	}
+
+	@media screen and (max-width: $break_sm) {
+		@include size(12);
+	}
+
+	a {
+		display: block;
+	}
+
+	img {
+		height: 76px;
+
+		@media screen and (max-width: 1100px) {
+			height: 62px;
+		}
+	}
+}
+
+.header-text {
+	@include col();
+	position: relative;
+	padding-left: 25px;
+
+	@media screen and (max-width: 1100px) {
+		margin: 0;
+	}
+
+	@media screen and (max-width: $break_md) {
+		margin-right: 5px;
+		order: 2;
+		margin: 15px 15px 0;
+		@include size(6);
+	}
+
+	@media screen and (max-width: $break_sm) {
+		@include size(12);
+		padding-left: 0;
+		margin: 0 15px;
+
+		&:not(:nth-last-child(2)) {
+			margin-bottom: 15px;
+		}
+
+		strong {
+			@include pix-to-rem(18px);
+		}
+	}
+
+	&:before {
+		position: absolute;
+		content: '';
+		top: 5px;
+		left: 0;
+		height: 10px;
+		width: 10px;
+		border-radius: 50%;
+		background-color: $color-akcent;
+
+		@media screen and (max-width: $break_sm) {
+			display: none;
+		}
+	}
+}
+
+.header-contacts {
+	@include col();
+	font-weight: 400;
+
+	@media screen and (max-width: $break_md) {
+		order: 1;
+		@include size(6);
+	}
+
+
+	@media screen and (max-width: $break_sm) {
+		@include size(12);
+		margin-bottom: 15px;
+	}
+
+	a {
+		color: $color-default;
+	}
+
+	.tel {
+		font-weight: bold;
+		@include pix-to-rem(18px);
+		text-decoration: none;
+	}
+}

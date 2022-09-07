@@ -1,0 +1,82 @@
+.contacns {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media screen and (max-width: $break_md) {
+        padding: 0;
+    }
+}
+
+.contacns .wrapper {}
+
+.contacns-box {
+    position: relative;
+    z-index: 5;
+
+    padding: 60px;
+
+    max-width: 460px;
+    width: 100%;
+
+    background-color: #fff;
+
+    @include pix-to-rem(18px);
+
+    @media screen and (max-width: $break_lg) {
+        max-width: 380px;
+        left: 50px;
+    }
+
+    @media screen and (max-width: $break_md) {
+        left: 0;
+        max-width: 745px;
+
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+
+    p {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    a[href^="tel:"] {
+        font-weight: bold;
+        text-decoration: none;
+        color: $color-default;
+    }
+
+    a[href^="mailto:"] {
+        font-weight: bold;
+        text-decoration: none;
+        //color: $color-default;
+    }
+}
+
+.contacns-box__header {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    @include pix-to-rem(30px);
+    font-weight: bold;
+
+    @media screen and (max-width: $break_lg) {
+        @include pix-to-rem(26px);
+    }
+}
+
+.contacns-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    @media screen and (max-width: $break_md) {
+        position: relative;
+        height: 450px;
+    }
+}

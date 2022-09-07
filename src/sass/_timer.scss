@@ -1,0 +1,55 @@
+.timer {
+	max-width: 450px;
+	margin: 0 auto;
+	text-align: center;
+
+	@media screen and (max-width: $break_sm) {
+		margin-bottom: 55px;
+	}
+
+	&-wrapper {
+		@include row-flex();
+		margin-bottom: 35px;
+	}
+
+	&-item {
+		@include col();
+		@include size(3);
+		@include pix-to-rem(60px);
+		position: relative;
+		line-height: 1;
+
+		@media screen and (max-width: $break_sm) {
+			@include pix-to-rem(32px);
+		}
+
+		&:not(:last-child):before {
+			position: absolute;
+			content: '';
+			width: 1px;
+			height: 70%;
+			top: 0%;
+			right: -16px;
+			background-color: rgba(255, 255, 255, .2);
+			//transform: translateY(-50%);
+		}
+
+		span {
+			display: block;
+			margin-top: 10px;
+			@include pix-to-rem(16px);
+
+			@media screen and (max-width: $break_sm) {
+				@include pix-to-rem(14px);
+			}
+
+			@media screen and (max-width: $break_xs) {
+				@include pix-to-rem(12px);
+			}
+		}
+	}
+
+	&-error {
+		@include pix-to-rem(24px);
+	}
+}

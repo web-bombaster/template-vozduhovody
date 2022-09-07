@@ -1,0 +1,53 @@
+/* pdf */
+a[href$=".pdf"] {
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 35px;
+
+	&::before {
+		content: '';
+		width: 25px;
+		height: 25px;
+		background-size: cover;
+		background-position: center left;
+		background-image: url('./../img/icons/pdf.svg');
+		position: absolute;
+		left: 0;
+	}
+}
+/* wors */
+a[href$=".doc"],
+a[href$=".docx"] {
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 35px;
+
+	&::before {
+		content: '';
+		width: 25px;
+		height: 25px;
+		background-size: cover;
+		background-position: center left;
+		background-image: url('./../img/icons/doc.svg');
+		position: absolute;
+		left: 0;
+	}
+}
+/* wors */
+a[href$=".xls"],
+a[href$=".xlsx"] {
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 35px;
+
+	&::before {
+		content: '';
+		width: 25px;
+		height: 25px;
+		background-size: cover;
+		background-position: center left;
+		background-image: url('./../img/icons/excel.svg');
+		position: absolute;
+		left: 0;
+	}
+}

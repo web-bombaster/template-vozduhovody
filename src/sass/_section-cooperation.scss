@@ -1,0 +1,84 @@
+.cooperation {
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-color: $bgcolor-02;
+
+    overflow: hidden;
+
+    .section-header {
+        margin-bottom: 100px;
+
+        @media screen and (max-width: $break_sm) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.cooperation .wrapper {}
+
+.cooperation-box {
+    @include row-flex;
+}
+
+.cooperation-item {
+    position: relative;
+
+    @include col();
+    @include size(6);
+    @include size-sm(12);
+
+    text-align: center;
+
+    @media screen and (max-width: $break_md) {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.cooperation-item__img {
+    img {
+        width: 140px;
+        margin-bottom: 15px;
+
+        @media screen and (max-width: $break_md) {
+            width: 100px;
+        }
+    }
+}
+
+.cooperation-item__title {
+    margin-bottom: 10px;
+
+    @include pix-to-rem(22px);
+    font-weight: bold;
+    line-height: 1.25;
+
+    @media screen and (max-width: $break_md) {
+        @include pix-to-rem(20px);
+    }
+
+    @media screen and (max-width: $break_sm) {
+        @include pix-to-rem(18px);
+    }
+}
+
+.cooperation-item__descr {
+    @include pix-to-rem(18px);
+
+    @media screen and (max-width: $break_md) {
+        @include pix-to-rem(16px);
+    }
+
+}
+
+
+.cooperation-btn {
+    margin-top: 35px;
+
+    @media screen and (max-width: $break_md) {
+        margin-top: 20px;
+    }
+}

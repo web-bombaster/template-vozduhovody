@@ -1,0 +1,84 @@
+.hero {
+	position: relative;
+	z-index: 0;
+	background-color: $color-akcent;
+	background-image: url('./../img/hero-bg.jpg');
+	background-size: cover;
+	background-position: center center;
+	color: #ffffff;
+	padding-top: 250px;
+	padding-bottom: 250px;
+	text-align: center;
+
+	@media screen and (max-width: $break_md) {
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+
+	@media screen and (max-width: $break_sm) {
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}
+
+	@media screen and (max-width: $break_xs) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+
+	&:before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+
+}
+
+.hero-box {
+	position: relative;
+	z-index: 1;
+	max-width: 950px;
+	margin: 0 auto;
+}
+
+.hero-title {
+	margin-bottom: 80px;
+	@include pix-to-rem(46px);
+	line-height: 1.25;
+	font-weight: bold;
+
+	@media screen and (max-width: $break_md) {
+		font-size: 38px;
+		margin-bottom: 60px;
+	}
+
+
+	@media screen and (max-width: $break_sm) {
+		font-size: 32px;
+		margin-bottom: 50px;
+	}
+
+	span {
+		color: $color-akcent2;
+	}
+
+}
+
+.hero-subtitle {
+	@include pix-to-rem(30px);
+
+	@media screen and (max-width: $break_md) {
+		font-size: 28px;
+	}
+
+	@media screen and (max-width: $break_md) {
+		font-size: 24px;
+	}
+}
+
+.hero-btn {}

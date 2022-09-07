@@ -1,0 +1,30 @@
+script(type='text/javascript').
+	// здесь нужная дата в формате гггг-мм-дд чч:мм:сс
+	var deadline='2018-09-29 23:55:00';
+
+.timer
+	.timer-wrapper
+		.timer-item
+			.d 00
+			span Дней
+		.timer-item
+			.h 00
+			span Часов
+		.timer-item
+			.m 00
+			span Минут
+		.timer-item
+			.s 00
+			span Секунд
+	.timer-error
+
+
+
+//- script(type='text/javascript').
+	$('.timer').downCount({
+		date: deadline,
+	},
+	function(){
+	/* действие после завершения таймера */
+	alert("Время истекло!");
+	});

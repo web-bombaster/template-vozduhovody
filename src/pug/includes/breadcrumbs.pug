@@ -1,0 +1,32 @@
+//-.breadcrumbs(itemscope='', itemtype='http://data-vocabulary.org/Breadcrumb')
+	| Вы здесь:
+	a(href='#', itemprop='url')
+		span(itemprop='title') KrisGeimor - Профессиональный фотограф
+	| 	 → 
+	a(href='#', itemprop='url')
+		span(itemprop='title') Портфолио
+	| 	 → 
+	a(href='#', itemprop='url')
+		span(itemprop='title') Свадебная съемка
+	| 	 → 
+	span(itemprop='title') Ирина и Евгений
+
+
+
+ol.breadcrumbs(itemscope itemtype='http://schema.org/BreadcrumbList')
+	li.breadcrumb-item(itemscope itemprop='itemListElement' itemtype='http://schema.org/ListItem')
+		a(href='https://sajt-vizitka-nedorogo.ru/' title='Заказать сайт-визитку недорого' rel='nofollow' itemprop='item')
+			span(itemprop='name') Заказать сайт-визитку недорого
+			meta(itemprop='position' content='1')
+	|  → 
+
+	li.breadcrumb-item(itemscope itemprop='itemListElement' itemtype='http://schema.org/ListItem')
+		a(href='https://sajt-vizitka-nedorogo.ru/blog' title='Блог' itemprop='item')
+			span(itemprop='name') Блог
+			meta(itemprop='position' content='2')
+	|  → 
+
+	li.breadcrumb-item.active(itemscope itemprop='itemListElement' itemtype='http://schema.org/ListItem')
+		a(href='https://sajt-vizitka-nedorogo.ru/blog/idei-dizajnov-kontaktov-na-sajte' title='Идеи дизайнов контактов на сайте' itemprop='item')
+			span(itemprop='name') Идеи дизайнов контактов на сайте
+			meta(itemprop='position' content='3')

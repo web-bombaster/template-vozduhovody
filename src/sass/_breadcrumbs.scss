@@ -1,0 +1,28 @@
+.breadcrumbs {
+	line-height: 1.5;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	background-color: $color-akcent4;
+	margin-top: 20px;
+	border-radius: 4px;
+	margin-bottom: 30px;
+
+	list-style-type: none;
+	// @include wrapper;
+
+	.breadcrumb-item {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		background-color: transparent;
+
+		&:before {
+			display: none;
+		}
+	}
+
+	.wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

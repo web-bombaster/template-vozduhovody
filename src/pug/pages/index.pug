@@ -1,0 +1,70 @@
+- var pageType = 'home';
+//- Для pageType указать тип страницы. Варианты:
+	home - главная страница
+	vnutr - простая внутренняя страница
+	sitemap - простая внутренняя страница
+
+doctype html
+html(lang="ru-RU")
+	include ../includes/head
+	body#top.blog
+
+		//- home - главная страница
+		if pageType === 'home'
+			//-include ../includes/top-panel
+			include ../includes/header
+			//- include ../includes/menu-adaptiv
+			include ../includes/section-hero
+			include ../includes/section-about
+			include ../includes/section-certificate
+			include ../includes/section-products
+			include ../includes/section-video
+			include ../includes/section-cta-price
+			include ../includes/section-advantages
+			include ../includes/section-portfolio
+			include ../includes/section-action
+			include ../includes/section-cooperation
+			include ../includes/section-delivery
+			include ../includes/section-contacns
+			include ../includes/footer
+			//-include ../includes/section-works
+			//- include ../includes/section-steps
+			//- include ../includes/section-portfolio
+			//- include ../includes/section-price
+			//- include ../includes/section-portfolio2
+			//-include ../includes/section-advantages
+			//- include ../includes/section-offer
+			//- include ../includes/section-guarantee
+			//- include ../includes/section-bonus
+
+		if pageType === 'vnutr'
+			include ../includes/header
+			//-include ../includes/menu-adaptiv
+			.wrapper
+
+				main.content
+					include ../includes/content
+
+		if pageType === 'sitemap'
+			//-include ../includes/top-panel
+			include ../includes/header
+			include ../includes/menu-adaptiv
+			.wrapper
+				.row
+					main.blog-content
+						include ../includes/content-sitemap
+					include ../includes/blog-aside
+
+
+
+		//- include ../includes/section-promo
+		//- .wrapper
+
+		//- include ../includes/section-contacts
+		//- include ../includes/footer
+		//- include ../includes/help-panel
+		//- include ../includes/phone-btn
+		include ../includes/hidden
+
+		//- Подключаем скрипты и стили
+		include ../includes/sourse

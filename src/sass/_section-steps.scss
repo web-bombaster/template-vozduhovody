@@ -1,0 +1,36 @@
+.steps {
+	// background-color: $color-akcent3;
+
+	&-wrapper {
+		@include row-flex();
+	}
+
+	&-item {
+		box-sizing: border-box;
+		@include col();
+		@include size(4);
+		@include size-sm(12);
+		max-width: 450px;
+
+		@media screen and (max-width: $break_sm) {
+			margin: 0 auto 35px;
+		}
+	}
+
+	&-img {
+		height: 55px;
+		width: auto;
+		margin-bottom: 0;
+		margin-bottom: 20px;
+	}
+
+	&-title {
+		@include pix-to-rem(18px);
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+
+	&-descr {
+		margin: 5px 0;
+	}
+}

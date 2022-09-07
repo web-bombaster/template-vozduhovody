@@ -1,0 +1,42 @@
+.certificate {
+    padding-top: 0;
+}
+
+.certificate .wrapper {
+    max-width: 800px;
+}
+
+.certificate-img-box {
+    margin-top: 34px;
+    @include row-flex;
+
+    img {
+        max-width: 310px;
+        width: 100%;
+        display: block;
+
+        @media screen and (max-width: $break_xs) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.certificate-img-item {
+    @include col();
+    @include size(6);
+    @include size-xs(12);
+
+    &:nth-child(1) {
+
+        img {
+            margin-left: auto;
+
+            @media screen and (max-width: $break_xs) {
+                //margin-left: 0;
+                margin-bottom: 15px;
+            }
+        }
+
+    }
+}

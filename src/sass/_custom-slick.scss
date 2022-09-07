@@ -1,0 +1,123 @@
+.slick-slider {
+	max-width: 960px;
+
+	@media screen and (max-width: $break_md) {
+		max-width: 700px;
+	}
+}
+
+.slick-list {
+	max-width: 860px;
+	margin: 0 auto;
+
+	@media screen and (max-width: $break_md) {
+		max-width: 600px;
+	}
+
+	@media screen and (max-width: $break_sm) {
+		max-width: 100%;
+	}
+}
+
+.slick-track {}
+
+
+button.slick-arrow,
+button.slick-arrow:hover {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 50;
+
+	display: block;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+
+	border: 0;
+	border-radius: 50%;
+
+	background-color: #e8e8e8;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 18px 18px;
+	outline: none;
+
+	@include pix-to-rem(0px);
+
+	@media screen and (max-width: $break_sm) {
+		width: 24px;
+		height: 24px;
+		background-size: 12px 12px;
+	}
+}
+
+.slick-next {
+	right: 0;
+	background-image: url('./../img/icons/arrow-right.svg');
+
+	@media screen and (max-width: $break_sm) {
+		right: 10px;
+	}
+}
+
+.slick-prev {
+	left: 0;
+	background-image: url('./../img/icons/arrow-left.svg');
+
+	@media screen and (max-width: $break_sm) {
+		left: 10px;
+	}
+}
+
+.slick-dotted {
+	margin-bottom: 35px;
+}
+
+.slick-dots {
+	display: block;
+	width: 100%;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	line-height: 0;
+	bottom: -35px;
+
+	@media screen and (max-width: $break_sm) {
+		top: calc(100% + 10px);
+		bottom: initial;
+	}
+
+	li {
+		display: inline-block;
+		padding: 0;
+		margin: 0 10px;
+		line-height: 0;
+		background-color: transparent;
+
+		@media screen and (max-width: $break_sm) {
+			margin: 3px 10px;
+		}
+
+		&:before {
+			display: none;
+		}
+
+		&.slick-active button {
+			background-color: $color-akcent;
+		}
+	}
+
+	button {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		font-size: 0;
+		width: 10px;
+		height: 10px;
+		border: 0;
+		background-color: darken($color-akcent3, 7%);
+		outline: none;
+	}
+}

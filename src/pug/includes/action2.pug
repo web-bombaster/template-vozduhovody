@@ -1,0 +1,22 @@
+section#action.action
+	.wrapper
+		.action-wrapper
+
+			.action-descr
+				h2.block-header Мы рады вам помочь!
+				.block-descr В связи открытием нового офиса скидка на все работы
+
+				include ../includes/timer
+
+			.action-form
+				form#zayavka3.form(method='post', action='')
+					h3.text-center Получить консультацию
+					.before.name
+						input.jsFormText(name='name', type='text', value='', placeholder="Ваше имя", required="")
+					.before.phone
+						input.jsFormPhone(name='phone', type='text', value='', placeholder="Контактный телефон", required="")
+					label.control-label.polytic(for='zayavka3-polytic')
+						input#zayavka3-polytic.polytic.jsFormCheckbox(name='soglasie', type='checkbox', value='yes', required="")
+						| Даю согласие на обработку моих персональных данных на условиях, указанных в
+						a(href='#') Политике конфиденциальности
+					button.btn.submit(name='submit', type='button') Отправить
